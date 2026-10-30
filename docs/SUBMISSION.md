@@ -2,7 +2,7 @@
 
 FloodSense EU explains why a place in Europe is at flood risk. Every claim cites the data row or document passage it came from. A Skeptic challenges the reasoning, a Judge scores it, and a human approves any outbound action.
 
-Open Agent Hackathon 2026, Track 02. Technical detail is in [architecture/technical-highlights.md](architecture/technical-highlights.md).
+Nebius x NVIDIA Global AI Hackathon, Best Apps and Agents. Technical detail is in [architecture/technical-highlights.md](architecture/technical-highlights.md).
 
 ## Sponsor usage
 
@@ -57,7 +57,7 @@ The NVIDIA chat key lives only in Nightshift's Providers tab. `NVIDIA_NIM_API_KE
 
 What it does. Some team members used Cursor extensively, including Cursor's Grokbot to run subagents. The repository holds a Cursor skill that sets the merge bar for cloud-agent pull requests. The repository's coding, review and documentation work also used coding agents with independent review agents: every change went through a branch, an independent review and a pull request (see the pull requests in this repository). The same wording is in the README, "How we built it".
 
-What the repository records. One Cursor artefact is committed: the skill `.cursor/skills/floodsense-pr-review/SKILL.md`, added in [PR #35](https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Hackathon-Monorepo/pull/35). It is the merge bar a Cursor cloud agent checks before it edits a pull request in this monorepo and again before it calls the pull request done. Which Cursor features each person used is not recorded in the repository, so we do not list it here.
+What the repository records. One Cursor artefact is committed: the skill `.cursor/skills/floodsense-pr-review/SKILL.md`, added in [PR #35](https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Nebius-NVIDIA-Hackathon/pull/35). It is the merge bar a Cursor cloud agent checks before it edits a pull request in this monorepo and again before it calls the pull request done. Which Cursor features each person used is not recorded in the repository, so we do not list it here.
 
 Where in the code: `.cursor/skills/floodsense-pr-review/SKILL.md` (see [CHANGELOG.md](../CHANGELOG.md), PR #35).
 

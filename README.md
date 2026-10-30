@@ -4,7 +4,7 @@ FloodSense EU explains why a place in Europe is at flood risk, with a citation f
 
 The default LLM backend is Nebius Token Factory with NVIDIA Nemotron.
 
-Open Agent Hackathon 2026, Track 02. Release 1.0.1 (tag `v1.0.1`, the submitted version): [release notes](docs/RELEASE-NOTES-v1.0.1.md), product description in the [1.0.0 notes](docs/RELEASE-NOTES-v1.0.0.md), [changelog](CHANGELOG.md).
+Nebius x NVIDIA Global AI Hackathon, Best Apps and Agents. Release 1.0.1 (tag `v1.0.1`, the submitted version): [release notes](docs/RELEASE-NOTES-v1.0.1.md), product description in the [1.0.0 notes](docs/RELEASE-NOTES-v1.0.0.md), [changelog](CHANGELOG.md).
 
 ![FloodSense EU screenshot](docs/assets/screenshot.jpg)
 
@@ -148,7 +148,7 @@ Model-call evidence on the Nebius backend: `py tasks.py check-llm` (one call per
 
 ## How we built it
 
-Some team members used Cursor extensively, including Cursor's Grokbot to run subagents. The repository holds one Cursor skill, `.cursor/skills/floodsense-pr-review/SKILL.md` (added in [PR #35](https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Hackathon-Monorepo/pull/35)): the merge bar a Cursor cloud agent checks before and after it reviews or fixes a pull request here.
+Some team members used Cursor extensively, including Cursor's Grokbot to run subagents. The repository holds one Cursor skill, `.cursor/skills/floodsense-pr-review/SKILL.md` (added in [PR #35](https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Nebius-NVIDIA-Hackathon/pull/35)): the merge bar a Cursor cloud agent checks before and after it reviews or fixes a pull request here.
 
 The repository's coding, review and documentation work also used coding agents with independent review agents. Every change went through a branch, an independent review and a pull request (see the pull requests in this repository). Sponsor detail: [docs/SUBMISSION.md](docs/SUBMISSION.md), "Cursor: how we built it".
 

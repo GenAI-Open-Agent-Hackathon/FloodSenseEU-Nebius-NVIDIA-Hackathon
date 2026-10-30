@@ -1,4 +1,4 @@
-# Handover: FloodSense EU (Open Agent Hackathon 2026, Track 02)
+# Handover: FloodSense EU (Nebius x NVIDIA Global AI Hackathon, Best Apps and Agents)
 
 Written 27 Oct 2026, updated 28 Oct 2026 after submission. **Submitted:** the hackathon form (demo video, deck, repository link,
 sponsor write-up) went in before the hard close. The repository is public. The submitted version is tag `v1.0.1`
@@ -110,4 +110,4 @@ Rebuild command, if the stack must be recreated: `docker compose -p floodsense-a
 
 ## Update, 30 Oct (end of day)
 
-On main: #142, #143, #145, #146, #147, #148 and #149 (3D map, agent heartbeat, red live gauges and region focus, role UI, merged UI on :15190, safe tooltips, Citizen map loading state). #144 was closed as superseded. Held: #108 (MUI draft) and #111 (local Postgres). UIs and ports: [UIS.md](UIS.md). The repository was copied to GenAI-Open-Agent-Hackathon/FloodSenseEU-Nebius-NVIDIA-Hackathon (branches, tags, releases; PRs and issues archived as issues).
+On main: #142, #143, #145, #146, #147, #148 and #149 (3D map, agent heartbeat, red live gauges and region focus, role UI, merged UI on :15190, safe tooltips, Citizen map loading state). #144 was closed as superseded. Held: #108 (MUI draft) and #111 (local Postgres). UIs and ports: [UIS.md](UIS.md).

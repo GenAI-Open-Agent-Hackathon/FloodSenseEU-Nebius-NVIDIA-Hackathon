@@ -1,6 +1,6 @@
 # FloodSense EU 1.0.0: release notes
 
-Open Agent Hackathon 2026, Track 02. Released 27 Oct 2026. The full change list is [CHANGELOG.md](../CHANGELOG.md); the sponsor details are in [SUBMISSION.md](SUBMISSION.md).
+Nebius x NVIDIA Global AI Hackathon, Best Apps and Agents. Released 27 Oct 2026. The full change list is [CHANGELOG.md](../CHANGELOG.md); the sponsor details are in [SUBMISSION.md](SUBMISSION.md).
 
 ## What FloodSense EU is
 

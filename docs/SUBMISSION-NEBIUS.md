@@ -40,7 +40,7 @@ FloodSense was built 22 to 27 Oct 2026 (v1.0.0, v1.0.1; see [CHANGELOG](../CHANG
 
 ### 1.7 Testing instructions
 
-- Demo URL: `TO FILL: <demo URL>`; judge login: `TO FILL: <login, if any>`.
+- Demo: the hosted judge demo (Caddy, HTTPS, basic-auth login; setup in [DEPLOY-NEBIUS.md](DEPLOY-NEBIUS.md)). The demo URL and the judge login are entered in the Devpost testing-instructions field, not in this public repository, so no credential is committed. Free access: the demo is free of charge and unrestricted for the Sponsor, Devpost and the Judges until the Judging Period ends on 23 Dec 2026, and runs from the public repository: `docker compose up -d` (see the README) also works locally with no login.
 - Open the Citizen desk, switch to Past flood, Valencia 2024. Try these (they are in the product's suggestion chips):
   1. "What happened at Paiporta in the Valencia flood of October 2024?"
   2. "When did the Valencia points cross the alert line in October 2024?"
@@ -55,8 +55,8 @@ FloodSense was built 22 to 27 Oct 2026 (v1.0.0, v1.0.1; see [CHANGELOG](../CHANG
 | Track Best Apps and Agents | Entering. |
 | Runtime call to Token Factory with an NVIDIA open model | VERIFIED on 30 Oct 2026: live calls on both lanes (`nvidia/Nemotron-3_5-Lightning`, `nvidia/Nemotron-3.5-Super-VL`), see section 6. |
 | Public repo, detectable open-source licence | Apache-2.0 `LICENSE` on main. Repo is PUBLIC and GitHub detects Apache-2.0 (`gh repo view`, checked 30 Oct 2026). |
-| README explains Nemotron use, Token Factory help, other Nebius tools | Section written; measured numbers added 30 Oct. Cost per run still TO FILL. |
-| Working demo URL | TO FILL. Hosting kit merged as PR #117, not yet deployed. |
+| README explains Nemotron use, Token Factory help, other Nebius tools | Section written; measured numbers added 30 Oct. Cost per full run, at list prices, bounds only (prompt and completion tokens were not split): $0.0035 to $0.0130 (Ahr 2021) and $0.0045 to $0.0153 (Valencia 2024); see section 6. |
+| Working demo URL | Hosting kit merged (`compose.hosted.yaml`, `deploy/hosted/`). URL and judge login go in the Devpost testing-instructions field. Also runs locally with `docker compose up -d`. |
 | Video under 3 min on YouTube | Script in section 4. TO DO (not recorded). |
 | English description | Section 1. |
 | Feedback on Token Factory / AI Cloud / NVIDIA models | Draft in section 3. |
@@ -73,7 +73,7 @@ Only what the repo shows is stated.
 
 - **Onboarding**: the OpenAI-compatible API meant the existing client needed a base URL, a Bearer key and model ids; the Nebius client reuses the retry, backoff and JSON-mode code. Base URL was taken from docs.tokenfactory.nebius.com/api-reference/introduction (per code comment).
 - **Token Factory** (live runs, 30 Oct 2026): model ids are plain `nvidia/...`; a `nebius/` prefix gave 404. `GET /v1/models` listed 30 models. Lane check: fast 1,108 ms, deep 30,399 ms for one tiny completion. Known gaps from docs reading: `response_format: json_object` and a thinking switch are not documented, so we drop the field on a 400 and do not send `enable_thinking`.
-- **AI Cloud**: TO FILL.
+- **AI Cloud**: not used. FloodSense calls Token Factory at runtime and does not run on Serverless Jobs, Serverless Endpoints or DevPods, so we have no AI Cloud feedback. The hosting kit targets a plain Nebius VM, which is not a service we are giving feedback on.
 - **NVIDIA models**: Nemotron reasoning tokens count against `max_tokens`; on Nightshift most completion tokens were hidden reasoning. On Token Factory the deep model returned thinking text and spent tokens on reasoning (observed 30 Oct; the 30,399 ms lane check is a reasoning model).
 - **Three improvements**: (1) document `response_format` / JSON mode and thinking control per model (the code comments in `NebiusClient` record both as undocumented); (2) state the exact model id format in the model catalogue, since the `nebius/` prefix gives 404; (3) separate reasoning text from the answer, and report reasoning tokens in `usage`. All three were experienced in our runs.
 

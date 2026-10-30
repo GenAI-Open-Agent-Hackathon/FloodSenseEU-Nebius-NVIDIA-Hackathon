@@ -10,7 +10,7 @@
 
 ## Global Constraints
 
-- Repo: `https://github.com/GenAI-Open-Agent-Hackathon/Hackathon-Monorepo`
+- Repo: `https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Nebius-NVIDIA-Hackathon`
 - Base tip for data waves: `feat/ingestion-sources-terms` (Saleeta), rebase onto current `main` before each PR
 - Do **not** push commits onto `feat/zetaris-data-sync` or Saleeta's remote branch; open new `feat/data-*` / `chore/ownership-*` branches under Mihir
 - Area labels: `area: data` for ingestion/zetaris; `area: contracts` if touching contracts; Mihir owns `compose.yaml` — teammates do not edit it

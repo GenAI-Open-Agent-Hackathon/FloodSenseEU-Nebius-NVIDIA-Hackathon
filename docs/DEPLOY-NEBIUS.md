@@ -46,8 +46,8 @@ no live Zetaris views). Chat answers are real model calls through Nebius Token F
    ```
 3. **Clone**:
    ```bash
-   git clone https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Hackathon-Monorepo.git
-   cd FloodSenseEU-Hackathon-Monorepo
+   git clone https://github.com/GenAI-Open-Agent-Hackathon/FloodSenseEU-Nebius-NVIDIA-Hackathon.git
+   cd FloodSenseEU-Nebius-NVIDIA-Hackathon
    cp deploy/hosted/hosted.env.example deploy/hosted/hosted.env
    ```
 4. **Judge login**: `python3 scripts/hosted_auth.py` prints `JUDGE_USER`, `JUDGE_HASH` and the plain password. Paste the two
