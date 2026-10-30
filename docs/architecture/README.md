@@ -7,3 +7,7 @@ On `v0.2.0`, `build_graph()` in `agents/floodsense_agents/graph.py` compiles the
 The engines sidecar is in `compose.yaml`. From `v0.9.0` the agents call it when `ENGINES_URL` is set: the World Model takes anomalies and hypotheses, and H-MEM recall plus write-on-approval run behind `FF_HMEM` (default off). Short-term thread memory does not use the sidecar. Lane names stay `meterless/fast` and `meterless/deep`. The model that answers a lane today is the one table at the top of [c4.md](c4.md).
 
 Decisions are proposed in [../adr/](../adr/). The team accepts or changes them at stand-up.
+
+## UIs
+
+Three interfaces share one API: the React console (`ui/`, :15173), the plain-JS role UI (`ui-eu/`, :15180) and the merged UI with the 3D map (`ui-merged/`, :15190). Diagram, ports and run commands: [../UIS.md](../UIS.md). Map internals: [map.md](map.md).

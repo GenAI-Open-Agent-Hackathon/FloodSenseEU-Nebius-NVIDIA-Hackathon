@@ -18,6 +18,17 @@ Hosted demo: TO FILL (not yet published; the steps below also work on a local ru
 
 Run locally with your own keys: see [Built on Nebius and NVIDIA](#built-on-nebius-and-nvidia) and [Quick start](#quick-start).
 
+## Three UIs, three ports
+
+| UI | Port |
+|---|---|
+| Main console (`ui/`, 3D map) | http://localhost:15173 |
+| Role UI (`ui-eu/`) | http://localhost:15180 |
+| Merged UI (`ui-merged/`, role UI + 3D map) | http://localhost:15190 |
+| API | http://localhost:18000 |
+
+How to start each and how they connect: [docs/UIS.md](docs/UIS.md).
+
 ## Three desks
 
 One console, switched in the header (Citizen | Insurer | Civil protection):

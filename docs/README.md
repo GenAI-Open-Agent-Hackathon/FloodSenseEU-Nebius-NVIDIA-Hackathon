@@ -2,6 +2,7 @@
 
 Owner: Mihir (architecture, ADRs, security review). The Architect is one role among five peers, not a team lead.
 
+- [UIS.md](UIS.md) — the three UIs (main console, role UI, merged UI), their ports, how to run them side by side, the 3D embed, CI.
 - [GAMEPLAN.md](GAMEPLAN.md) — how we ship FloodSense EU this week.
 - [RELEASE-NOTES-v2.0.0.md](RELEASE-NOTES-v2.0.0.md) — DRAFT, not released: Nebius Token Factory default, under-the-hood UI, upgrade notes.
 - [RELEASE-NOTES-v1.0.1.md](RELEASE-NOTES-v1.0.1.md) — the submitted version: cleanup of 1.0.0, no new features.

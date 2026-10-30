@@ -9,6 +9,10 @@ Increment tags are `v0.MINOR.0` only (`v0.0.0`, `v0.1.0`, `v0.2.0`, `v0.3.0`, `v
 
 ## [Unreleased]
 
+### Added
+
+- `docs/UIS.md`: the three UIs, their ports, the 3D embed, shared honesty rules and CI; linked from the root README, `docs/README.md`, `docs/architecture/README.md` and `docs/OWNERSHIP.md`.
+
 Draft notes for a possible 2.0.0 (not released, no tag): [docs/RELEASE-NOTES-v2.0.0.md](docs/RELEASE-NOTES-v2.0.0.md).
 
 ### Added

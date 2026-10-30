@@ -107,3 +107,7 @@ Still open:
 - For any later live demo: set `FF_LIVE_DATA`, `FF_HMEM` and `FF_RAG_DOCS` to true in `agents/.env` (the examples ship them off) and recreate the agents container. Run `python tasks.py demo-seed` after a rebuild (set `FF_SEMANTIC_CACHE=true` in `api/.env` first), and walk every page in Live, Past and Demo modes once in a browser.
 
 Rebuild command, if the stack must be recreated: `docker compose -p floodsense-app --project-directory . -f compose.yaml --profile rag --profile cache up -d --build agents api ui` (add `-f local/compose.console.yaml` only on the main dev machine, where that untracked file exists).
+
+## Update, 30 Oct (end of day)
+
+On main: #142, #143, #145, #146, #147, #148 and #149 (3D map, agent heartbeat, red live gauges and region focus, role UI, merged UI on :15190, safe tooltips, Citizen map loading state). #144 was closed as superseded. Held: #108 (MUI draft) and #111 (local Postgres). UIs and ports: [UIS.md](UIS.md). The repository was copied to GenAI-Open-Agent-Hackathon/FloodSenseEU-Nebius-NVIDIA-Hackathon (branches, tags, releases; PRs and issues archived as issues).
